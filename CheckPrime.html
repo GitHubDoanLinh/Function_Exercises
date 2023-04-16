@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+  function isPrime(number)
+  {
+
+      for(let i=2;i<number;i++)
+      {
+          if(number%i!==0)
+          {
+            document.write(number +" la so nguyen to ");
+            break;
+          }
+          else if(number>10000)
+          {
+            document.write("yeu cau nhap trong khoảng 2 => 10000 !");
+            break;
+          }
+          else
+          {
+            document.write(number +"khong la so nguyen to ");
+            break;
+          }
+      }
+  }
+
+  let a = prompt("Nhập vào số muốn kiểm tra ")
+  if(a==2)
+    document.write("2 la so nguyen to")
+  let result = isPrime(a);
+</script>
+</html>
