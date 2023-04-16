@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Thực hành tạo hàm tìm min trong mảng</h3>
+</body>
+<script>
+  function FindMin()
+  {
+    if(arr.length == 0)
+      return -1;
+    
+    let min = arr[0];
+
+    for(let i = 1; i < arr.length; i++){
+      if(arr[i] < min)
+      {
+        min = arr[i];
+      }
+    }
+    return min;
+  }
+  let arr = [3, 5, 1, 8, -3, 7, 8];
+  document.write("Array [3, 5, 1, 8, -3, 7, 8]")
+  let min = FindMin(arr);
+  document.write("<br> min = "+min);
+  // let arr2 = [];
+  // let min2 = FindMin(arr2);
+  // document.write(min2);
+</script>
+</html>
