@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ham kiem tra chuoi doi xung</title>
+</head>
+<body>
+
+</body>
+<script>
+    function check(arr){
+        for(let i=0;i<arr.length/2;i++){
+            if(arr[i] === arr[arr.length-1-i]){
+                return 1;
+            }
+            else {  
+                return 0;
+            }
+
+        }
+    }
+    let str = prompt("nhập vào 1 chuỗi ")
+    if(check(str)===1) {
+        alert(str + " là chuỗi đối xứng")
+    }
+    else{
+        alert(str + " không là chuỗi đối xứng !")
+    }
+
+</script>
+
+</html>
