@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function giaiThua(n)
+    {
+        if(n===0)
+            return 1;
+        else
+            return n*giaiThua(n-1)
+    }
+
+    let m = prompt("Nhập vào số cần tính giai thừa ")
+    let result = giaiThua(m);
+    alert(m +"! = "+result);
+</script>
+</html>

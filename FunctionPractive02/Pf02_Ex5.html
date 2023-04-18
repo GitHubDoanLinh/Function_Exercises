@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function findMin(a,b,c)
+    {
+        let min;
+        if(a<b)
+        {
+            if(a<c)
+            {
+                min = a;
+            }
+            else
+            {
+                min = c;
+            }
+        }
+        else if(b<a)
+        {
+            if(b<c)
+            {
+                min=b;
+            }
+            else
+            {
+               min=c;
+            }
+        }
+        else if(a<c)
+        {
+            if(a<b)
+            {
+                min=a;
+            }
+            else {
+                min=b;
+            }
+        }
+        else {
+            min=c;
+        }
+        return min;
+
+    }
+
+    let d = prompt("Nhap vao so thu nhat ")
+    let e = prompt("Nhap vao so thu hai ")
+    let f = prompt("nhap vao so thu 3 ")
+    let result = findMin(d,e,f)
+    alert(result);
+</script>
+</html>
