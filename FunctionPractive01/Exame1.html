@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  //let scores = [4,5,6,7,8,9,10]
+  function lonThuBa(a, as)
+  {
+    if(as<3)
+    {
+      document.write("kích thước mảng đã cho quá bé !");
+      return;
+    }
+
+    let first = a[0];
+    for(let i=1;i<as;i++)
+    {
+      if(a[i]>first)
+      {
+        first=a[i];
+      }
+    }
+
+    let second = Number.MIN_VALUE;
+    for(let i=0;i<as;i++)
+    {
+      if(a[i]>second && a[i]< first)
+      {
+        second=a[i];
+      }
+    }
+
+    let third = Number.MIN_VALUE;
+    for (let i=0;i<as;i++)
+    {
+      if(a[i]>third && a[i]<second)
+      {
+          third=a[i]
+      }
+
+    }
+    document.write("điểm lớn thứ 3 trong mảng  = "+ third)
+
+
+  }
+  let scores = [4,5,6,7,8,9,10];
+  let n = scores.length;
+
+  lonThuBa(scores,n);
+
+
+</script>
+
+</html>
